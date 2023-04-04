@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Packer And Mover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- slick.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick-theme.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <button id="button" class="d-flex align-items-center justify-content-center"><svg width="24" height="26"
+            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 11.3333L12 1.33331L22 11.3333M2 24.6666L12 14.6666L22 24.6666" stroke="white" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <!-- HEADER===============> -->
+    <header>
+        <!-- NAVBAR===============> -->
+        <nav class="position-relative z-3">
+            <div class="container py-lg-4">
+                <div class="d-flex align-items-center justify-content-between py-3">
+                    <div class="d-flex align-items-center justify-content-between w-100 zindex_1 position-relative">
+                        <img src="./assets/images/svg/Page_logo.svg" data-aos="zoom-in" data-aos-duration="800"
+                            alt="Page_logo">
+                        <div class="d-flex d-lg-none flex-column me-2" onclick="navbaropen()" id="closeopenbutton">
+                            <span class="span_line d-inline-block"></span>
+                            <span class="span_line d-inline-block my-2"></span>
+                            <span class="span_line d-inline-block"></span>
+                        </div>
+                    </div>
+                    <div class="d-lg-flex align-items-center d-none">
+                        <a href="#" class="d-flex align-items-center" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="200">
+                            <img src="./assets/images/svg/TELEPHONE.svg" alt="TELEPHONE">
+                            <span class="ps-3">
+                                <h2 class="ff_Nunito fs_sm text_light fw_regular mb-0 text-uppercase">TELEPHONE</h2>
+                                <p class="ff_Nunito fw_bold fs_lg text_primary mb-0">+123456789</p>
+                            </span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center ps-4 ps-xl-5 ms-xl-4" data-aos="zoom-in"
+                            data-aos-duration="800" data-aos-delay="400">
+                            <img src="./assets/images/svg/EmailBox.svg" alt="EmailBox">
+                            <span class="ps-3">
+                                <h2 class="ff_Nunito fs_sm text_light fw_regular mb-0 text-uppercase">EMAIL ADDRESS</h2>
+                                <p class="ff_Nunito fw_bold fs_lg text_primary mb-0">info@moversco.com</p>
+                            </span>
+                        </a>
+                        <div class=" ms-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                            <button
+                                class="ff_Nunito fs_sm fw_bold text_secondary bg_tertiary py-3 px-5 border-0 ms-xl-5 text-uppercase Requestbuttom_hover text-nowrap">Request
+                                a
+                                quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navopen d-flex h-100 align-items-center" id="opennavbar">
+                <div class="linear_gradient_white_gray py-4 position-absolute z-1 w-100" id="navfixed">
+                    <div class="container h-100 ">
+                        <div class="row justify-content-between h-100 align-content-center">
+                            <div class="col-12 col-lg-8 t">
+                                <div
+                                    class="d-flex align-content-center justify-content-center justify-content-lg-between w-100">
+                                    <ul class="ps-0 mb-0 d-lg-flex align-items-center">
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block">home</a>
+                                        </li>
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block ms-lg-4 ms-xl-5">pages</a>
+                                        </li>
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block ms-lg-4 ms-xl-5">projects</a>
+                                        </li>
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block ms-lg-4 ms-xl-5">services</a>
+                                        </li>
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block ms-lg-4 ms-xl-5">blog</a>
+                                        </li>
+                                        <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"><a href="#"
+                                                class="ff_Nunito fs_sm fw_bold text-uppercase text_secondary navlink_hover mt-5 mt-lg-0 d-inline-block ms-lg-4 ms-xl-5">contacts</a>
+                                        </li>
+                                    </ul>
+                                    <div class="ms-4 d-none d-lg-flex">
+                                        <div class="" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">
+                                            <button type="button"
+                                                class="btn btn-prima ry position-relative p-0 change_fill">
+                                                <span><svg width="26" height="26" viewBox="0 0 32 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0.209334 6.36335C0.294325 6.26132 0.400717 6.17922 0.52097 6.12288C0.641223 6.06655 0.772395 6.03734 0.905193 6.03733H25.5093L26.2897 1.73573C26.3781 1.24859 26.6348 0.807957 27.015 0.490729C27.3951 0.173501 27.8746 -0.000177482 28.3698 1.36101e-07H31.0943C31.3345 1.36101e-07 31.5649 0.0954112 31.7347 0.265244C31.9046 0.435077 32 0.66542 32 0.9056C32 1.14578 31.9046 1.37612 31.7347 1.54596C31.5649 1.71579 31.3345 1.8112 31.0943 1.8112H28.3773C28.3058 1.81003 28.2362 1.83427 28.181 1.8796C28.1257 1.92493 28.0883 1.98841 28.0754 2.05873L24.2248 23.2347C24.1026 23.9102 23.7735 24.531 23.2829 25.0112C23.8753 25.485 24.3177 26.1203 24.5565 26.8403C24.7954 27.5602 24.8204 28.334 24.6286 29.0679C24.4368 29.8018 24.0364 30.4644 23.4758 30.9755C22.9153 31.4866 22.2186 31.8243 21.4701 31.9477C20.7216 32.0711 19.9534 31.975 19.2584 31.6709C18.5634 31.3669 17.9714 30.868 17.5541 30.2345C17.1368 29.601 16.912 28.8602 16.907 28.1017C16.902 27.3432 17.1169 26.5995 17.5258 25.9605H9.64344C10.1128 26.6949 10.3243 27.5647 10.2445 28.4326C10.1648 29.3005 9.79837 30.1171 9.20308 30.7538C8.60779 31.3904 7.81749 31.8107 6.95683 31.9485C6.09617 32.0863 5.21413 31.9337 4.44982 31.5147C3.68551 31.0958 3.08243 30.4343 2.73569 29.6347C2.38896 28.8351 2.3183 27.9428 2.53486 27.0986C2.75143 26.2543 3.24289 25.5062 3.93174 24.9722C4.62059 24.4382 5.46762 24.1487 6.33924 24.1493H20.9553C21.3088 24.1494 21.6511 24.0254 21.9226 23.7989C22.194 23.5725 22.3773 23.2579 22.4406 22.9102L22.984 19.9232H5.11658C4.33885 19.9234 3.58573 19.6506 2.98852 19.1525C2.3913 18.6544 1.98789 17.9624 1.8486 17.1973L0.0146148 7.10443C-0.00907358 6.97418 -0.0039162 6.84032 0.0297264 6.71228C0.0633691 6.58424 0.124678 6.46513 0.209334 6.36335ZM18.7168 28.0736C18.7168 28.4915 18.8407 28.9001 19.0729 29.2476C19.3051 29.595 19.6352 29.8659 20.0213 30.0258C20.4075 30.1857 20.8324 30.2276 21.2423 30.1461C21.6522 30.0645 22.0288 29.8633 22.3243 29.5678C22.6198 29.2722 22.8211 28.8957 22.9027 28.4858C22.9842 28.0759 22.9423 27.6511 22.7824 27.265C22.6225 26.8788 22.3516 26.5488 22.0041 26.3166C21.6566 26.0845 21.248 25.9605 20.83 25.9605C20.2696 25.9605 19.732 26.1832 19.3357 26.5794C18.9394 26.9757 18.7168 27.5132 18.7168 28.0736ZM4.226 28.0736C4.226 28.4915 4.34994 28.9001 4.58214 29.2476C4.81435 29.595 5.14439 29.8659 5.53053 30.0258C5.91668 30.1857 6.34158 30.2276 6.75151 30.1461C7.16144 30.0645 7.53798 29.8633 7.83352 29.5678C8.12906 29.2722 8.33033 28.8957 8.41187 28.4858C8.49341 28.0759 8.45156 27.6511 8.29162 27.265C8.13167 26.8788 7.86081 26.5488 7.51329 26.3166C7.16577 26.0845 6.7572 25.9605 6.33924 25.9605C5.77877 25.9605 5.24126 26.1832 4.84495 26.5794C4.44864 26.9757 4.226 27.5132 4.226 28.0736ZM3.63127 16.8728C3.69455 17.2206 3.87789 17.5351 4.14933 17.7616C4.42076 17.988 4.76307 18.1121 5.11658 18.112H23.3131L25.1788 7.84853H1.99049L3.63127 16.8728Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                                <span
+                                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill ff_Nunito fs_xsm fw_regular bg_secondary text_primary">
+                                                    0
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a href="#" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800"
+                                            class="p-0 change_fill bg-transparent bottom-0 ms-4 ps-4 border_left"
+                                            onclick="openseach()">
+                                            <span><svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20.8357 18.3357H19.5191L19.0524 17.8857C20.094 16.6757 20.8552 15.2504 21.2817 13.7118C21.7081 12.1732 21.7892 10.5593 21.5191 8.98573C20.7357 4.3524 16.8691 0.652399 12.2024 0.0857328C10.5618 -0.121824 8.89538 0.0486855 7.33077 0.584214C5.76617 1.11974 4.34481 2.0061 3.17545 3.17545C2.0061 4.34481 1.11974 5.76617 0.584214 7.33077C0.0486855 8.89538 -0.121824 10.5618 0.0857328 12.2024C0.652399 16.8691 4.3524 20.7357 8.98573 21.5191C10.5593 21.7892 12.1732 21.7081 13.7118 21.2817C15.2504 20.8552 16.6757 20.094 17.8857 19.0524L18.3357 19.5191V20.8357L25.4191 27.9191C26.1024 28.6024 27.2191 28.6024 27.9024 27.9191C28.5857 27.2357 28.5857 26.1191 27.9024 25.4357L20.8357 18.3357ZM10.8357 18.3357C6.68573 18.3357 3.33573 14.9857 3.33573 10.8357C3.33573 6.68573 6.68573 3.33573 10.8357 3.33573C14.9857 3.33573 18.3357 6.68573 18.3357 10.8357C18.3357 14.9857 14.9857 18.3357 10.8357 18.3357Z"
+                                                        fill="white" />
+                                                </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 d-none d-lg-flex">
+                                <div class="d-flex align-items-center">
+                                    <a class="ms-4 ms-xl-5 change_fill_tertiary" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="900" href="#">
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_109_13)">
+                                                <path
+                                                    d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_109_13">
+                                                    <rect width="8.616" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a class="ms-4 ms-xl-5 change_fill_tertiary" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="1000" href="#">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.6894 1.88235C18.9647 2.21176 18.1835 2.42824 17.3741 2.53176C18.2024 2.03294 18.8424 1.24235 19.1435 0.291765C18.3624 0.762353 17.4965 1.09176 16.5835 1.28C15.84 0.470588 14.7953 0 13.6094 0C11.3976 0 9.59059 1.80706 9.59059 4.03765C9.59059 4.35765 9.62823 4.66824 9.69412 4.96C6.34353 4.79059 3.36 3.18118 1.37412 0.743529C1.02588 1.33647 0.828235 2.03294 0.828235 2.76706C0.828235 4.16941 1.53412 5.41176 2.62588 6.11765C1.95765 6.11765 1.33647 5.92941 0.790588 5.64706V5.67529C0.790588 7.63294 2.18353 9.27059 4.02824 9.63765C3.43598 9.79973 2.81421 9.82228 2.21176 9.70353C2.46739 10.5059 2.96803 11.2079 3.64331 11.711C4.31858 12.2141 5.13454 12.4929 5.97647 12.5082C4.5493 13.6381 2.78023 14.2488 0.96 14.24C0.64 14.24 0.32 14.2212 0 14.1835C1.78824 15.3318 3.91529 16 6.19294 16C13.6094 16 17.6847 9.84471 17.6847 4.50824C17.6847 4.32941 17.6847 4.16 17.6753 3.98118C18.4659 3.41647 19.1435 2.70118 19.6894 1.88235Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a class="ms-4 ms-xl-5 change_fill_tertiary" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="1100" href="#">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_111_21)">
+                                                <path
+                                                    d="M13 0C13.8264 0 14.533 0.293403 15.1198 0.880208C15.7066 1.46701 16 2.17361 16 3V13C16 13.8264 15.7066 14.533 15.1198 15.1198C14.533 15.7066 13.8264 16 13 16H3C2.17361 16 1.46701 15.7066 0.880208 15.1198C0.293403 14.533 0 13.8264 0 13V3C0 2.17361 0.293403 1.46701 0.880208 0.880208C1.46701 0.293403 2.17361 0 3 0H13ZM7.27083 8C7.27083 7.38889 7.05556 6.86806 6.625 6.4375C6.19444 6.00694 5.67361 5.79167 5.0625 5.79167C4.45139 5.79167 3.93056 6.00694 3.5 6.4375C3.06944 6.86806 2.85417 7.38889 2.85417 8C2.85417 8.61111 3.06944 9.13194 3.5 9.5625C3.93056 9.99306 4.45139 10.2083 5.0625 10.2083C5.67361 10.2083 6.19444 9.99306 6.625 9.5625C7.05556 9.13194 7.27083 8.61111 7.27083 8ZM13.1458 8C13.1458 7.38889 12.9306 6.86806 12.5 6.4375C12.0694 6.00694 11.5486 5.79167 10.9375 5.79167C10.3264 5.79167 9.80556 6.00694 9.375 6.4375C8.94444 6.86806 8.72917 7.38889 8.72917 8C8.72917 8.61111 8.94444 9.13194 9.375 9.5625C9.80556 9.99306 10.3264 10.2083 10.9375 10.2083C11.5486 10.2083 12.0694 9.99306 12.5 9.5625C12.9306 9.13194 13.1458 8.61111 13.1458 8Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_111_21">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a class="ms-4 ms-xl-5 change_fill_tertiary" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="1200" href="#">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.1429 6.85714H22.8571V4.57143H20.5714V6.85714H18.2857V9.14286H20.5714V11.4286H22.8571V9.14286H25.1429M8 6.85714V9.6H12.5714C12.3429 10.7429 11.2 13.0286 8 13.0286C5.25714 13.0286 3.08571 10.7429 3.08571 8C3.08571 5.25714 5.25714 2.97143 8 2.97143C9.6 2.97143 10.6286 3.65714 11.2 4.22857L13.3714 2.17143C12 0.8 10.1714 0 8 0C3.54286 0 0 3.54286 0 8C0 12.4571 3.54286 16 8 16C12.5714 16 15.6571 12.8 15.6571 8.22857C15.6571 7.65714 15.6571 7.31429 15.5429 6.85714H8Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="searchBox d-flex align-items-center justify-content-center position-relative " id="openseachbar">
+            <div class="d-flex bg_secondary p-1 w-50 justify-content-between">
+                <input type="text" placeholder="WRITE SEARCH WORD..."
+                    class="border-0 fs_2xl ff_Nunito fw_regular bg-transparent ps-2">
+                <button class="border-0 p-2 bg_primary"><svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.8357 18.3357H19.5191L19.0524 17.8857C20.094 16.6757 20.8552 15.2504 21.2817 13.7118C21.7081 12.1732 21.7892 10.5593 21.5191 8.98573C20.7357 4.3524 16.8691 0.652399 12.2024 0.0857328C10.5618 -0.121824 8.89538 0.0486855 7.33077 0.584214C5.76617 1.11974 4.34481 2.0061 3.17545 3.17545C2.0061 4.34481 1.11974 5.76617 0.584214 7.33077C0.0486855 8.89538 -0.121824 10.5618 0.0857328 12.2024C0.652399 16.8691 4.3524 20.7357 8.98573 21.5191C10.5593 21.7892 12.1732 21.7081 13.7118 21.2817C15.2504 20.8552 16.6757 20.094 17.8857 19.0524L18.3357 19.5191V20.8357L25.4191 27.9191C26.1024 28.6024 27.2191 28.6024 27.9024 27.9191C28.5857 27.2357 28.5857 26.1191 27.9024 25.4357L20.8357 18.3357ZM10.8357 18.3357C6.68573 18.3357 3.33573 14.9857 3.33573 10.8357C3.33573 6.68573 6.68573 3.33573 10.8357 3.33573C14.9857 3.33573 18.3357 6.68573 18.3357 10.8357C18.3357 14.9857 14.9857 18.3357 10.8357 18.3357Z"
+                            fill="white" />
+                    </svg></button>
+                <button class="bg-transparent border-0 position-absolute closeicon " onclick="closeseach()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.3333 2.35L20.9833 0L11.6667 9.31667L2.35 0L0 2.35L9.31667 11.6667L0 20.9833L2.35 23.3333L11.6667 14.0167L20.9833 23.3333L23.3333 20.9833L14.0167 11.6667L23.3333 2.35Z"
+                            fill="#999" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+
+        <!-- HERO-SECTION=====================> -->
+        <section class="pt-lg-5 mt-lg-4">
+            <div id="carouselExample" class="carousel slide position-relative">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="herosection">
+                            <div class="container h-100 d-md-flex pt-4 align-items-end" data-aos="fade-up"
+                                data-aos-duration="800" data-aos-delay="200">
+                                <div class="first_hadding_box px-3 py-5 px-md-5">
+                                    <h2 class="ff_Nunito fs_5xl fw_bold text_secondary" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="400"> <span
+                                            class="d-block Get_button">We Provide Best</span>
+                                        <span class="d-block hadding_button pt-2 pt-md-3">Moving Service</span>
+                                    </h2>
+                                    <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                                        <p class="ff_opensans fs_lg fw_regular text_danger py-3 carousel_paragraph">we
+                                            offer
+                                            marketing and
+                                            consulting services for companies & businesses working in these industries.
+                                        </p>
+                                    </div>
+                                    <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                                        <div class="carousel_button">
+                                            <button
+                                                class="ff_Roboto fs_sm fw_bold text_dark border-0 py-3 px-4 text-uppercase letterspacing_2 Requestbuttom_hover ">view
+                                                our work</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="herosection">
+                            <div class="container h-100 d-md-flex pt-4 align-items-end">
+                                <div class="first_hadding_box px-3 py-5 px-md-5">
+                                    <h2 class="ff_Nunito fs_5xl fw_bold text_secondary  ">
+                                        <span class="Get_button">We Provide Best</span>
+                                        <span class="d-block hadding_button pt-2 pt-md-3">Moving Service</span>
+                                    </h2>
+                                    <p class="ff_opensans fs_lg fw_regular text_danger py-3 carousel_paragraph">we offer
+                                        marketing and
+                                        consulting services for companies & businesses working in these industries.</p>
+                                    <div class="carousel_button">
+                                        <button
+                                            class="ff_Roboto fs_sm fw_bold text_dark border-0 py-3 px-4 text-uppercase letterspacing_2 Requestbuttom_hover ">view
+                                            our work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex position-absolute bottom-0 end_100">
+                    <button class="bg_secondary py-3 px-4 border-0 carouselbutton_hover" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.35 17.65L4.71667 10L12.35 2.35L10 0L0 10L10 20L12.35 17.65Z" fill="#313437" />
+                        </svg>
+                    </button>
+                    <button class="bg_tertiary border-0 py-3 px-4 carouselbutton_hover" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 17.65L7.63333 10L0 2.35L2.35 0L12.35 10L2.35 20L0 17.65Z" fill="#fff" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- MAIN SECTION=====================> -->
+    <main>
+        <!-- SECTION-1======================> -->
+        <section>
+            <div class="container py-5 text-center">
+                <h2 class="ff_Nunito fw_light fs_3xl text_warning" data-aos="zoom-in" data-aos-duration="800"
+                    data-aos-delay="200" data-aos-offset="200">
+                    “I have found honest and reliable movers through
+                    for each of <span class="d-xl-block">my last seven moves”</span>
+                </h2>
+                <img title="sing" class="pt-2 pt-lg-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"
+                    data-aos-offset="200" src="./assets/images/svg/sing.svg" alt="sing">
+            </div>
+        </section>
+        <!-- SECTION-2======================> -->
+        <section>
+            <div class="container py-lg-5">
+                <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-6 col-xl-5 pt-4 pt-lg-0">
+                        <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary" data-aos="fade-down"
+                            data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">OUR COMPANY</p>
+                        <h2 class="ff_Biryani fs_4xl fw_regular text_primary" data-aos="fade-right"
+                            data-aos-duration="800" data-aos-delay="300" data-aos-offset="200">We are the best moving
+                            company in the
+                            world.</h2>
+                        <p class="ff_Biryani fs_md fw_regular text_warning py-3" data-aos="fade-right"
+                            data-aos-duration="800" data-aos-delay="400" data-aos-offset="200">Now were up in the big
+                            leagues getting’
+                            our turn at bat. And when the odds are against him
+                            and their dangers work to do
+                            Duis aute irure dolor.</p>
+                        <div class="d-flex align-items-sm-center justify-content-between flex-column flex-sm-row"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-offset="200">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/svg/cil_smile.svg" alt="cil_smile">
+                                <div class="ps-3">
+                                    <h2 class="ff_Nunito fs_4xl fw_bold text_primary mb-0 count" data-number="500">0
+                                    </h2>
+                                    <p class="ff_Biryani fs_sm fw-semibold mb-0 text_warning">Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center pt-4 pt-sm-0" data-aos="fade-up"
+                                data-aos-duration="800" data-aos-delay="600" data-aos-offset="200">
+                                <img src="./assets/images/svg/box_seam.svg" alt="box_seam">
+                                <div class="ps-3">
+                                    <h2 class="ff_Nunito fs_4xl fw_bold text_primary mb-0 count" data-number="6540">0
+                                    </h2>
+                                    <p class="ff_Biryani fs_sm fw-semibold mb-0 text_warning">Total boxed moved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-5">
+                        <img class="w-100" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"
+                            data-aos-offset="200" src="./assets/images/webp/stocks.webp" alt="stocks">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-3======================> -->
+        <section>
+            <div class="container py-5">
+                <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary text-center" data-aos="fade-down"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">WHY CHOOSE US</p>
+                <h2 class="ff_Biryani fs_4xl fw_regular text_primary  text-center" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="300" data-aos-offset="200">We give you complete control
+                    <span class="d-sm-block">of your shipments.</span>
+                </h2>
+                <div class="slider_1  pt-5">
+                    <div class="mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"
+                        data-aos-offset="200">
+                        <div class="d-flex">
+                            <h2 class="ff_Biryani fs_3xl  fw_bold text_tertiary">01</h2>
+                            <div class="ps-4">
+                                <h3 class="ff_Biryani fs_xl fw_bold text_primary mb-0">Request quotes</h3>
+                                <p class="ff_Nunito fs_md fw_regular text_warning">Extreme attention to detail is the
+                                    essence of MoversCo’s unique design concepts.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <span class="ps-2 fs_md">></span> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"
+                        data-aos-offset="200">
+                        <div class="d-flex">
+                            <h2 class="ff_Biryani fs_3xl  fw_bold text_tertiary">02</h2>
+                            <div class="ps-4">
+                                <h3 class="ff_Biryani fs_xl fw_bold text_primary mb-0">Request quotes</h3>
+                                <p class="ff_Nunito fs_md fw_regular text_warning">Extreme attention to detail is the
+                                    essence of MoversCo’s unique design concepts.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <span class="ps-2 fs_md">></span> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"
+                        data-aos-offset="200">
+                        <div class="d-flex">
+                            <h2 class="ff_Biryani fs_3xl  fw_bold text_tertiary">03</h2>
+                            <div class="ps-4">
+                                <h3 class="ff_Biryani fs_xl fw_bold text_primary mb-0">Request quotes</h3>
+                                <p class="ff_Nunito fs_md fw_regular text_warning">Extreme attention to detail is the
+                                    essence of MoversCo’s unique design concepts.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <span class="ps-2 fs_md">></span> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-4======================> -->
+        <section>
+            <div class="container-fluid  py-lg-5 px-0 position-relative" data-aos="zoom-in" data-aos-duration="800"
+                data-aos-delay="200" data-aos-offset="200">
+                <img class="w-100 girlbox" src="./assets/images/webp/girlbox.webp" alt="girlbox">
+                <div class="position-absolute top-50 start-50 translate-middle videoicon d-flex align-items-center justify-content-center rounded-circle"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="./assets/images/svg/videoicon.svg" alt="videoicon">
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-5======================> -->
+        <section>
+            <div class="container py-5">
+                <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary text-center" data-aos="fade-down"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">OUR SERVICES</p>
+                <h2 class="ff_Biryani fs_4xl fw_regular text_primary  text-center" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="300" data-aos-offset="200">We are a USA based top
+                    <span class="d-block">MoverCo company</span>
+                </h2>
+                <div class="slider_1  pt-5">
+                    <div class="cards_hover mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"
+                        data-aos-offset="200">
+                        <div class="cards">
+                            <div class="overflow-hidden"><img class="w-100"
+                                    src="./assets/images/webp/ResidentialMoves.webp" alt="ResidentialMoves"></div>
+                            <div class="px-4 border_light pb-4">
+                                <div class="py-3"><img src="./assets/images/svg/deliveryicon.svg" alt="deliveryicon ">
+                                </div>
+                                <a class="ff_Biryani fs_2xl fw_bold text_primary" href="#">Residential Moves</a>
+                                <p class="ff_Nunito fs_md fw_regular text_warning pt-3">Extreme attention to detail
+                                    is the
+                                    essence of Boo’s unique.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                            fill="#313437" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards_hover mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"
+                        data-aos-offset="200">
+                        <div class="cards">
+                            <div class="overflow-hidden"><img class="w-100"
+                                    src="./assets/images/webp/CorporateRelocation.webp" alt="CorporateRelocation"></div>
+                            <div class="px-4 border_light pb-4">
+                                <div class="py-3"><img src="./assets/images/svg/customer_service.svg"
+                                        alt="customer_service ">
+                                </div>
+                                <a class="ff_Biryani fs_2xl fw_bold text_primary" href="#">Corporate Relocations</a>
+                                <p class="ff_Nunito fs_md fw_regular text_warning pt-3">Extreme attention to detail
+                                    is the
+                                    essence of Boo’s unique.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                            fill="#313437" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards_hover mx-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"
+                        data-aos-offset="200">
+                        <div class="cards">
+                            <div class="overflow-hidden"><img class="w-100"
+                                    src="./assets/images/webp/WarehousingStorage.webp" alt="WarehousingStorage"></div>
+                            <div class="px-4 border_light pb-4">
+                                <div class="py-3"><img src="./assets/images/svg/building_home.svg" alt="building_home ">
+                                </div>
+                                <a class="ff_Biryani fs_2xl fw_bold text_primary" href="#">Warehousing & Storage</a>
+                                <p class="ff_Nunito fs_md fw_regular text_warning pt-3">Extreme attention to detail
+                                    is the
+                                    essence of Boo’s unique.</p>
+                                <button
+                                    class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                    MORE
+                                    <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                            fill="#313437" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-6======================> -->
+        <section>
+            <div class="container py-lg-5">
+                <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-6 col-xl-5 pt-4 pt-lg-0">
+                        <div class="pe-lg-5 me-xl-3">
+                            <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary" data-aos="fade-down"
+                                data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">MOVING SAFELY</p>
+                            <h2 class="ff_Biryani fs_4xl fw_regular text_primary" data-aos="fade-right"
+                                data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">We provide Safe
+                                Moving Procedures</h2>
+                            <p class="ff_Biryani fs_md fw_regular text_warning py-3" data-aos="fade-right"
+                                data-aos-duration="800" data-aos-delay="400" data-aos-offset="200">Now were up in the
+                                big leagues
+                                getting’
+                                our turn at bat. And when the odds are against him and their dangers work to do
+                                Duis aute irure dolor coding skills required.</p>
+                            <button
+                                class="ff_Nunito fs_xsm fw_bold text_tertiary px-5 py-3 read_morebutton bg-transparent"
+                                data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"
+                                data-aos-offset="200">READ
+                                MORE</button>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-7">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"
+                                data-aos-offset="200">
+                                <div class="rounded_card">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="105" cy="105" r="100"></circle>
+                                            <circle cx="105" cy="105" r="100" style="--percent: 85"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h3 class="ff_Nunito fs_4xl fw_bold text_primary">85<span
+                                                    class="fs_2xl">%</span></h3>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center pt-4">
+                                        <h2 class="ff_Biryani fs_lg fw_bold text_primary">Customers Chooses us</h2>
+                                        <p class="ff_Biryani fs_md fw_regular text_warning"> Now were in the big leagues
+                                            getting our turn at bat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"
+                                data-aos-offset="200">
+                                <div class="rounded_card">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="105" cy="105" r="100"></circle>
+                                            <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h3 class="ff_Nunito fs_4xl fw_bold text_primary">90<span
+                                                    class="fs_2xl">%</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-center pt-4">
+                                        <h2 class="ff_Biryani fs_lg fw_bold text_primary">Customers are Satisfied</h2>
+                                        <p class="ff_Biryani fs_md fw_regular text_warning"> Now were in the big leagues
+                                            getting our turn at bat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-7======================> -->
+        <section>
+            <div class="container py-5">
+                <div class="slider_image pb-4">
+                    <div class="mx-2 text-center">
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" data-aos-offset="200"
+                            src="./assets/images/svg/BrandName.svg" alt="BrandName">
+                    </div>
+                    <div class="mx-2 text-center">
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" data-aos-offset="200"
+                            src="./assets/images/svg/dynamic.svg" alt="dynamic">
+                    </div>
+                    <div class="mx-2 text-center">
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600" data-aos-offset="200"
+                            src="./assets/images/svg/HomeMovers.svg" alt="HomeMovers">
+                    </div>
+                    <div class="mx-2 text-center">
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800" data-aos-offset="200"
+                            src="./assets/images/svg/ABrandName.svg" alt="ABrandName">
+                    </div>
+                    <div class="mx-2 text-center">
+                        <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1000" data-aos-offset="200"
+                            src="./assets/images/svg/TechBrand.svg" alt="TechBrand">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-8======================> -->
+        <section>
+            <div class="container py-lg-5">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary" data-aos="fade-down"
+                            data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">OUR COMPANY</p>
+                        <h2 class="ff_Biryani fs_4xl fw_regular text_primary" data-aos="fade-right"
+                            data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">We are a USA based top
+                            Mover company</h2>
+                        <p class="ff_Biryani fs_md fw_regular text_warning py-3" data-aos="fade-left"
+                            data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">Now were up in the big
+                            leagues getting’
+                            our turn at bat. And when the odds are against him and work to do Duis aute
+                            irure dolor.</p>
+                        <img class="w-100" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"
+                            data-aos-offset="200" src="./assets/images/webp/ResidentialMoves.webp"
+                            alt="ResidentialMoves">
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                        <img class="w-100" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"
+                            data-aos-offset="200" src="./assets/images/webp/ResidentialMoves.webp"
+                            alt="ResidentialMoves">
+                        <h2 class="ff_Biryani fs_md fw_regular text_primary py-3 py-lg-5" data-aos="fade-right"
+                            data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">What We do</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <ul class="ps-3">
+                                    <li class="ff_Biryani fs_md fw_regular text_warning" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="200" data-aos-offset="200"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        These Happy
+                                        Days are yours
+                                    </li>
+                                    <li class="ff_Biryani fs_md fw_regular text_warning py-3" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="200" data-aos-offset="300"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        Why do we
+                                        always come.
+                                    </li>
+                                    <li class="ff_Biryani fs_md fw_regular text_warning" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="400" data-aos-offset="200"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        There ain't
+                                        nothin' wrong
+                                        with
+                                        .
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <ul class="ps-3">
+                                    <li class="ff_Biryani fs_md fw_regular text_warning" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="500" data-aos-offset="200"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        These Happy
+                                        Days are yours
+                                    </li>
+                                    <li class="ff_Biryani fs_md fw_regular text_warning py-3" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="600" data-aos-offset="200"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        Why do we
+                                        always come.
+                                    </li>
+                                    <li class="ff_Biryani fs_md fw_regular text_warning" data-aos="zoom-in"
+                                        data-aos-duration="800" data-aos-delay="700" data-aos-offset="200"><img
+                                            class="pe-2" src="./assets/images/svg/subway_tick.svg" alt="subway_tick">
+                                        There ain't
+                                        nothin' wrong
+                                        with
+                                        .
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-9======================> -->
+        <section>
+            <div class="container py-5">
+                <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary text-center" data-aos="fade-down"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">OUR TEAM</p>
+                <h2 class="ff_Biryani fs_4xl fw_regular text_primary text-center pb-3 pb-lg-5" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">Meet our Professionals
+                </h2>
+                <div class="slider_show_4">
+                    <div class="mx-2 cards_hover h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"
+                        data-aos-offset="200">
+                        <div class="text-center cards h-100">
+                            <div class="imge_overlay"><img class="w-100" src="./assets/images/webp/TimeDeliveryBoy.webp"
+                                    alt="TimeDeliveryBoy"></div>
+                            <a href="#"
+                                class="ff_Biryani fw_bold fs_lg text_primary d-inline-block mt-4 hover_tertiary">Micheal
+                                Wagou</a>
+                            <p class="ff_Biryani fs_xsm fw_bold text-uppercase text_tertiary text-center pt-2">DELIVERY
+                                BOY
+                            </p>
+                            <div class="d-flex justify-content-center pb-4">
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_123_13)">
+                                            <path
+                                                d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                fill="#979797" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_123_13">
+                                                <rect width="8.616" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6894 1.86537C18.9647 2.19181 18.1835 2.40633 17.3741 2.50893C18.2024 2.0146 18.8424 1.23115 19.1435 0.289133C18.3624 0.755476 17.4965 1.08192 16.5835 1.26845C15.84 0.466344 14.7953 0 13.6094 0C11.3976 0 9.59059 1.79076 9.59059 4.00123C9.59059 4.31834 9.62823 4.62613 9.69412 4.91526C6.34353 4.74738 3.36 3.15248 1.37412 0.736823C1.02588 1.32442 0.828235 2.0146 0.828235 2.7421C0.828235 4.1318 1.53412 5.36295 2.62588 6.06247C1.95765 6.06247 1.33647 5.87593 0.790588 5.59612V5.6241C0.790588 7.56409 2.18353 9.18697 4.02824 9.55071C3.43598 9.71133 2.81421 9.73368 2.21176 9.616C2.46739 10.4111 2.96803 11.1068 3.64331 11.6054C4.31858 12.1039 5.13454 12.3802 5.97647 12.3954C4.5493 13.515 2.78023 14.1202 0.96 14.1116C0.64 14.1116 0.32 14.0929 0 14.0556C1.78824 15.1935 3.91529 15.8557 6.19294 15.8557C13.6094 15.8557 17.6847 9.75591 17.6847 4.46757C17.6847 4.29036 17.6847 4.12248 17.6753 3.94527C18.4659 3.38565 19.1435 2.67681 19.6894 1.86537Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1429 6.79529H22.8571V4.53019H20.5714V6.79529H18.2857V9.06039H20.5714V11.3255H22.8571V9.06039H25.1429M8 6.79529V9.51341H12.5714C12.3429 10.646 11.2 12.9111 8 12.9111C5.25714 12.9111 3.08571 10.646 3.08571 7.92784C3.08571 5.20972 5.25714 2.94463 8 2.94463C9.6 2.94463 10.6286 3.62415 11.2 4.19043L13.3714 2.15184C12 0.792784 10.1714 0 8 0C3.54286 0 0 3.5109 0 7.92784C0 12.3448 3.54286 15.8557 8 15.8557C12.5714 15.8557 15.6571 12.6845 15.6571 8.15435C15.6571 7.58807 15.6571 7.24831 15.5429 6.79529H8Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.429 6.969H11.143V8.819C11.678 7.755 13.05 6.799 15.111 6.799C19.062 6.799 20 8.917 20 12.803V20H16V13.688C16 11.475 15.465 10.227 14.103 10.227C12.214 10.227 11.429 11.572 11.429 13.687V20H7.429V6.969ZM0.57 19.83H4.57V6.799H0.57V19.83ZM5.143 2.55C5.14315 2.88528 5.07666 3.21724 4.94739 3.52659C4.81812 3.83594 4.62865 4.11651 4.39 4.352C3.9064 4.83262 3.25181 5.10165 2.57 5.1C1.88939 5.09954 1.23631 4.8312 0.752 4.353C0.514211 4.11671 0.325386 3.83582 0.196344 3.52643C0.0673015 3.21704 0.000579132 2.88522 0 2.55C0 1.873 0.27 1.225 0.753 0.747C1.23689 0.268158 1.89024 -0.000299211 2.571 2.50265e-07C3.253 2.50265e-07 3.907 0.269 4.39 0.747C4.872 1.225 5.143 1.873 5.143 2.55Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-2 cards_hover h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"
+                        data-aos-offset="200">
+                        <div class="text-center cards h-100">
+                            <div class="imge_overlay"><img class="w-100" src="./assets/images/webp/DRIVER.webp"
+                                    alt="DRIVER"></div>
+                            <a href="#"
+                                class="ff_Biryani fw_bold fs_lg text_primary d-inline-block mt-4 hover_tertiary">Alex
+                                Mitchell</a>
+                            <p class="ff_Biryani fs_xsm fw_bold text-uppercase text_tertiary text-center pt-2">DRIVER
+                            </p>
+                            <div class="d-flex justify-content-center pb-4">
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_123_13)">
+                                            <path
+                                                d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                fill="#979797" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_123_13">
+                                                <rect width="8.616" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6894 1.86537C18.9647 2.19181 18.1835 2.40633 17.3741 2.50893C18.2024 2.0146 18.8424 1.23115 19.1435 0.289133C18.3624 0.755476 17.4965 1.08192 16.5835 1.26845C15.84 0.466344 14.7953 0 13.6094 0C11.3976 0 9.59059 1.79076 9.59059 4.00123C9.59059 4.31834 9.62823 4.62613 9.69412 4.91526C6.34353 4.74738 3.36 3.15248 1.37412 0.736823C1.02588 1.32442 0.828235 2.0146 0.828235 2.7421C0.828235 4.1318 1.53412 5.36295 2.62588 6.06247C1.95765 6.06247 1.33647 5.87593 0.790588 5.59612V5.6241C0.790588 7.56409 2.18353 9.18697 4.02824 9.55071C3.43598 9.71133 2.81421 9.73368 2.21176 9.616C2.46739 10.4111 2.96803 11.1068 3.64331 11.6054C4.31858 12.1039 5.13454 12.3802 5.97647 12.3954C4.5493 13.515 2.78023 14.1202 0.96 14.1116C0.64 14.1116 0.32 14.0929 0 14.0556C1.78824 15.1935 3.91529 15.8557 6.19294 15.8557C13.6094 15.8557 17.6847 9.75591 17.6847 4.46757C17.6847 4.29036 17.6847 4.12248 17.6753 3.94527C18.4659 3.38565 19.1435 2.67681 19.6894 1.86537Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1429 6.79529H22.8571V4.53019H20.5714V6.79529H18.2857V9.06039H20.5714V11.3255H22.8571V9.06039H25.1429M8 6.79529V9.51341H12.5714C12.3429 10.646 11.2 12.9111 8 12.9111C5.25714 12.9111 3.08571 10.646 3.08571 7.92784C3.08571 5.20972 5.25714 2.94463 8 2.94463C9.6 2.94463 10.6286 3.62415 11.2 4.19043L13.3714 2.15184C12 0.792784 10.1714 0 8 0C3.54286 0 0 3.5109 0 7.92784C0 12.3448 3.54286 15.8557 8 15.8557C12.5714 15.8557 15.6571 12.6845 15.6571 8.15435C15.6571 7.58807 15.6571 7.24831 15.5429 6.79529H8Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.429 6.969H11.143V8.819C11.678 7.755 13.05 6.799 15.111 6.799C19.062 6.799 20 8.917 20 12.803V20H16V13.688C16 11.475 15.465 10.227 14.103 10.227C12.214 10.227 11.429 11.572 11.429 13.687V20H7.429V6.969ZM0.57 19.83H4.57V6.799H0.57V19.83ZM5.143 2.55C5.14315 2.88528 5.07666 3.21724 4.94739 3.52659C4.81812 3.83594 4.62865 4.11651 4.39 4.352C3.9064 4.83262 3.25181 5.10165 2.57 5.1C1.88939 5.09954 1.23631 4.8312 0.752 4.353C0.514211 4.11671 0.325386 3.83582 0.196344 3.52643C0.0673015 3.21704 0.000579132 2.88522 0 2.55C0 1.873 0.27 1.225 0.753 0.747C1.23689 0.268158 1.89024 -0.000299211 2.571 2.50265e-07C3.253 2.50265e-07 3.907 0.269 4.39 0.747C4.872 1.225 5.143 1.873 5.143 2.55Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-2 cards_hover h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600"
+                        data-aos-offset="200">
+                        <div class="text-center cards h-100">
+                            <div class="imge_overlay"><img class="w-100" src="./assets/images/webp/MANAGER.webp"
+                                    alt="MANAGER"></div>
+                            <a href="#"
+                                class="ff_Biryani fw_bold fs_lg text_primary d-inline-block mt-4 hover_tertiary">Margaret
+                                Anderson</a>
+                            <p class="ff_Biryani fs_xsm fw_bold text-uppercase text_tertiary text-center pt-2">MANAGER
+                            </p>
+                            <div class="d-flex justify-content-center pb-4">
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_123_13)">
+                                            <path
+                                                d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                fill="#979797" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_123_13">
+                                                <rect width="8.616" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6894 1.86537C18.9647 2.19181 18.1835 2.40633 17.3741 2.50893C18.2024 2.0146 18.8424 1.23115 19.1435 0.289133C18.3624 0.755476 17.4965 1.08192 16.5835 1.26845C15.84 0.466344 14.7953 0 13.6094 0C11.3976 0 9.59059 1.79076 9.59059 4.00123C9.59059 4.31834 9.62823 4.62613 9.69412 4.91526C6.34353 4.74738 3.36 3.15248 1.37412 0.736823C1.02588 1.32442 0.828235 2.0146 0.828235 2.7421C0.828235 4.1318 1.53412 5.36295 2.62588 6.06247C1.95765 6.06247 1.33647 5.87593 0.790588 5.59612V5.6241C0.790588 7.56409 2.18353 9.18697 4.02824 9.55071C3.43598 9.71133 2.81421 9.73368 2.21176 9.616C2.46739 10.4111 2.96803 11.1068 3.64331 11.6054C4.31858 12.1039 5.13454 12.3802 5.97647 12.3954C4.5493 13.515 2.78023 14.1202 0.96 14.1116C0.64 14.1116 0.32 14.0929 0 14.0556C1.78824 15.1935 3.91529 15.8557 6.19294 15.8557C13.6094 15.8557 17.6847 9.75591 17.6847 4.46757C17.6847 4.29036 17.6847 4.12248 17.6753 3.94527C18.4659 3.38565 19.1435 2.67681 19.6894 1.86537Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1429 6.79529H22.8571V4.53019H20.5714V6.79529H18.2857V9.06039H20.5714V11.3255H22.8571V9.06039H25.1429M8 6.79529V9.51341H12.5714C12.3429 10.646 11.2 12.9111 8 12.9111C5.25714 12.9111 3.08571 10.646 3.08571 7.92784C3.08571 5.20972 5.25714 2.94463 8 2.94463C9.6 2.94463 10.6286 3.62415 11.2 4.19043L13.3714 2.15184C12 0.792784 10.1714 0 8 0C3.54286 0 0 3.5109 0 7.92784C0 12.3448 3.54286 15.8557 8 15.8557C12.5714 15.8557 15.6571 12.6845 15.6571 8.15435C15.6571 7.58807 15.6571 7.24831 15.5429 6.79529H8Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.429 6.969H11.143V8.819C11.678 7.755 13.05 6.799 15.111 6.799C19.062 6.799 20 8.917 20 12.803V20H16V13.688C16 11.475 15.465 10.227 14.103 10.227C12.214 10.227 11.429 11.572 11.429 13.687V20H7.429V6.969ZM0.57 19.83H4.57V6.799H0.57V19.83ZM5.143 2.55C5.14315 2.88528 5.07666 3.21724 4.94739 3.52659C4.81812 3.83594 4.62865 4.11651 4.39 4.352C3.9064 4.83262 3.25181 5.10165 2.57 5.1C1.88939 5.09954 1.23631 4.8312 0.752 4.353C0.514211 4.11671 0.325386 3.83582 0.196344 3.52643C0.0673015 3.21704 0.000579132 2.88522 0 2.55C0 1.873 0.27 1.225 0.753 0.747C1.23689 0.268158 1.89024 -0.000299211 2.571 2.50265e-07C3.253 2.50265e-07 3.907 0.269 4.39 0.747C4.872 1.225 5.143 1.873 5.143 2.55Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-2 cards_hover h-100" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800"
+                        data-aos-offset="200">
+                        <div class="text-center cards h-100">
+                            <div class="imge_overlay"><img class="w-100" src="./assets/images/webp/TemeDeliveryBoy.webp"
+                                    alt="TemeDeliveryBoy">
+                            </div>
+                            <a href="#"
+                                class="ff_Biryani fw_bold fs_lg text_primary d-inline-block mt-4 hover_tertiary">John
+                                Harris</a>
+                            <p class="ff_Biryani fs_xsm fw_bold text-uppercase text_tertiary text-center pt-2">DELIVERY
+                                BOY
+                            </p>
+                            <div class="d-flex justify-content-center pb-4">
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_123_13)">
+                                            <path
+                                                d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                fill="#979797" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_123_13">
+                                                <rect width="8.616" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6894 1.86537C18.9647 2.19181 18.1835 2.40633 17.3741 2.50893C18.2024 2.0146 18.8424 1.23115 19.1435 0.289133C18.3624 0.755476 17.4965 1.08192 16.5835 1.26845C15.84 0.466344 14.7953 0 13.6094 0C11.3976 0 9.59059 1.79076 9.59059 4.00123C9.59059 4.31834 9.62823 4.62613 9.69412 4.91526C6.34353 4.74738 3.36 3.15248 1.37412 0.736823C1.02588 1.32442 0.828235 2.0146 0.828235 2.7421C0.828235 4.1318 1.53412 5.36295 2.62588 6.06247C1.95765 6.06247 1.33647 5.87593 0.790588 5.59612V5.6241C0.790588 7.56409 2.18353 9.18697 4.02824 9.55071C3.43598 9.71133 2.81421 9.73368 2.21176 9.616C2.46739 10.4111 2.96803 11.1068 3.64331 11.6054C4.31858 12.1039 5.13454 12.3802 5.97647 12.3954C4.5493 13.515 2.78023 14.1202 0.96 14.1116C0.64 14.1116 0.32 14.0929 0 14.0556C1.78824 15.1935 3.91529 15.8557 6.19294 15.8557C13.6094 15.8557 17.6847 9.75591 17.6847 4.46757C17.6847 4.29036 17.6847 4.12248 17.6753 3.94527C18.4659 3.38565 19.1435 2.67681 19.6894 1.86537Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1429 6.79529H22.8571V4.53019H20.5714V6.79529H18.2857V9.06039H20.5714V11.3255H22.8571V9.06039H25.1429M8 6.79529V9.51341H12.5714C12.3429 10.646 11.2 12.9111 8 12.9111C5.25714 12.9111 3.08571 10.646 3.08571 7.92784C3.08571 5.20972 5.25714 2.94463 8 2.94463C9.6 2.94463 10.6286 3.62415 11.2 4.19043L13.3714 2.15184C12 0.792784 10.1714 0 8 0C3.54286 0 0 3.5109 0 7.92784C0 12.3448 3.54286 15.8557 8 15.8557C12.5714 15.8557 15.6571 12.6845 15.6571 8.15435C15.6571 7.58807 15.6571 7.24831 15.5429 6.79529H8Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                                <a class="icons d-flex align-items-center justify-content-center mx-2" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.429 6.969H11.143V8.819C11.678 7.755 13.05 6.799 15.111 6.799C19.062 6.799 20 8.917 20 12.803V20H16V13.688C16 11.475 15.465 10.227 14.103 10.227C12.214 10.227 11.429 11.572 11.429 13.687V20H7.429V6.969ZM0.57 19.83H4.57V6.799H0.57V19.83ZM5.143 2.55C5.14315 2.88528 5.07666 3.21724 4.94739 3.52659C4.81812 3.83594 4.62865 4.11651 4.39 4.352C3.9064 4.83262 3.25181 5.10165 2.57 5.1C1.88939 5.09954 1.23631 4.8312 0.752 4.353C0.514211 4.11671 0.325386 3.83582 0.196344 3.52643C0.0673015 3.21704 0.000579132 2.88522 0 2.55C0 1.873 0.27 1.225 0.753 0.747C1.23689 0.268158 1.89024 -0.000299211 2.571 2.50265e-07C3.253 2.50265e-07 3.907 0.269 4.39 0.747C4.872 1.225 5.143 1.873 5.143 2.55Z"
+                                            fill="#979797" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-10======================> -->
+        <section class="bg_white_and_light overflow-x-hidden">
+            <div class="py-4 bg_red_and_tr">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-lg-center flex-column flex-lg-row">
+                        <div class="py-4">
+                            <h2 class="ff_Biryani fs_sm fw_bold text_secondary" data-aos="fade-down"
+                                data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">GET STARTED</h2>
+                            <p class="ff_Biryani fs_3xl fw_bold text_secondary mb-0" data-aos="fade-up"
+                                data-aos-duration="800" data-aos-delay="300" data-aos-offset="200">Helping Over 50,000
+                                Movers in the
+                                USA
+                            </p>
+                        </div>
+                        <div class="me-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"
+                            data-aos-offset="200"><button
+                                class="ff_Nunito fs_xsm fw_bold text_primary Requestbuttom_hover py-3 border-0 px-4">DISCOVER
+                                MORE</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <p class="ff_Biryani fs_sm fw_bold text-uppercase text_tertiary text-center" data-aos="fade-down"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">OUR BLOG</p>
+                <h2 class="ff_Biryani fs_4xl fw_regular text_primary text-center pb-5" data-aos="fade-up"
+                    data-aos-duration="800" data-aos-delay="200" data-aos-offset="200">Our Happy Cusmoter Say</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-6 position-relative">
+                        <img class="w-100 h_lg_75 object-fit-cover" data-aos="fade-down" data-aos-duration="800"
+                            data-aos-delay="200" data-aos-offset="200" src="./assets/images/webp/turuck_image.webp"
+                            alt="turuck_image">
+                        <div
+                            class="bg_secondary  ps-4 position_lg_absolute bottom-0 translate_middle_lg_x start-50 w_lg_75 mb-4 my-lg-0">
+                            <div class="py-4">
+                                <p class="ff_Nunito fs_xsm fw_bold text_secondary text-uppercase bg_tertiary d-inline-block py-2 px-3"
+                                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    AUG 08</p>
+                                <div class="pe-xl-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <a href="#" class="ff_Biryani fs_2xl fw_bold text_primary hover_tertiary">
+                                        Our Home Entertainment has Evolved Significantly</a>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <button
+                                        class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary d-inline-block">READ
+                                        MORE
+                                        <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                                fill="#313437" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                        <div class="row bg_secondary align-items-center ps-sm-4 flex-column-reverse flex-sm-row">
+                            <div class="py-2 col-12 col-sm-6">
+                                <p class="ff_Nunito fs_xsm fw_bold text_secondary text-uppercase bg_tertiary d-inline-block py-2 px-3"
+                                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    AUG 15</p>
+                                <div class="pe-xl-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <a href="#" class="ff_Biryani fs_2xl fw_bold text_primary hover_tertiary">Load
+                                        Boards Show Flat
+                                        Demand and
+                                        Higher Rates</a>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <button
+                                        class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                        MORE
+                                        <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                                fill="#313437" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 pe-lg-0" data-aos="fade-left" data-aos-duration="800"
+                                data-aos-delay="400" data-aos-offset="200">
+                                <div id="carouselExampleAutoplayings" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplayings"
+                                            data-bs-slide-to="0" class="active border-0 rounded-circle"
+                                            aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" class="border-0 rounded-circle"
+                                            data-bs-target="#carouselExampleAutoplayings" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" class="border-0 rounded-circle"
+                                            data-bs-target="#carouselExampleAutoplayings" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg_secondary align-items-center ps-sm-4 flex-column-reverse flex-sm-row mt-4">
+                            <div class="py-2 col-12 col-sm-6">
+                                <p class="ff_Nunito fs_xsm fw_bold text_secondary text-uppercase bg_tertiary d-inline-block py-2 px-3"
+                                    data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    SEP 23</p>
+                                <div class="pe-xl-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <a href="#" class="ff_Biryani fs_2xl fw_bold text_primary hover_tertiary">Truckers
+                                        to Seek HOS Waiver to the Ease Calif</a>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"
+                                    data-aos-offset="200">
+                                    <button
+                                        class="bg-transparent border-0 fs_xsm ff_Nunito fw_bold text_primary hover_tertiary">READ
+                                        MORE
+                                        <svg width="22" height="22" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.83366 7.5L5.25033 6.89583L6.72949 5.41667H1.66699V4.58333H6.72949L5.25033 3.10417L5.83366 2.5L8.33366 5L5.83366 7.5Z"
+                                                fill="#313437" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 pe-lg-0" data-aos="fade-left" data-aos-duration="800"
+                                data-aos-delay="400" data-aos-offset="200">
+                                <div id="carouselExampleAutoplayings" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleAutoplayings"
+                                            data-bs-slide-to="0" class="active border-0 rounded-circle"
+                                            aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" class="border-0 rounded-circle"
+                                            data-bs-target="#carouselExampleAutoplayings" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" class="border-0 rounded-circle"
+                                            data-bs-target="#carouselExampleAutoplayings" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="./assets/images/webp/turuck_image.webp"
+                                                alt="turuck_image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER ======================> -->
+    <footer class="bg_primary">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 pt-4" data-aos="zoom-in" data-aos-duration="800"
+                    data-aos-delay="200" data-aos-offset="200">
+                    <div class="d-flex align-items-center hover_address d-inline">
+                        <div class="headphone d-flex align-items-center justify-content-center rounded-circle">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 15H8.75C9.41304 15 10.0489 15.2634 10.5178 15.7322C10.9866 16.2011 11.25 16.837 11.25 17.5V23.75C11.25 24.413 10.9866 25.0489 10.5178 25.5178C10.0489 25.9866 9.41304 26.25 8.75 26.25H5C4.33696 26.25 3.70107 25.9866 3.23223 25.5178C2.76339 25.0489 2.5 24.413 2.5 23.75V15C2.5 8.09625 8.09625 2.5 15 2.5C21.9037 2.5 27.5 8.09625 27.5 15V23.75C27.5 24.413 27.2366 25.0489 26.7678 25.5178C26.2989 25.9866 25.663 26.25 25 26.25H21.25C20.587 26.25 19.9511 25.9866 19.4822 25.5178C19.0134 25.0489 18.75 24.413 18.75 23.75V17.5C18.75 16.837 19.0134 16.2011 19.4822 15.7322C19.9511 15.2634 20.587 15 21.25 15H25C25 12.3478 23.9464 9.8043 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.8043 6.05357 7.92893 7.92893C6.05357 9.8043 5 12.3478 5 15Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="ps-3">
+                            <h2 class="ff_Biryani fs_md fw_bold text_secondary mb-0">Phone:
+                                <span class="d-block pt-1">(719) 445-2808</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pt-4" data-aos="zoom-in" data-aos-duration="800"
+                    data-aos-delay="400" data-aos-offset="200">
+                    <div class="d-flex align-items-center hover_address d-inline">
+                        <div class="headphone d-flex align-items-center justify-content-center rounded-circle">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 12.0788 17.7958 12.8737 17.2097 13.4597C16.6237 14.0458 15.8288 14.375 15 14.375Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="ps-3">
+                            <h2 class="ff_Biryani fs_md fw_bold text_secondary mb-0">Address:
+                                <span class="d-block pt-1">4578 Marmora Road</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pt-4" data-aos="zoom-in" data-aos-duration="800"
+                    data-aos-delay="600" data-aos-offset="200">
+                    <div class="d-flex align-items-center hover_address d-inline">
+                        <div class="headphone d-flex align-items-center justify-content-center rounded-circle">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_163_6)">
+                                    <path
+                                        d="M26.667 5H3.33366C2.89163 5 2.46771 5.17559 2.15515 5.48816C1.84259 5.80072 1.66699 6.22464 1.66699 6.66667V23.3333C1.66699 23.7754 1.84259 24.1993 2.15515 24.5118C2.46771 24.8244 2.89163 25 3.33366 25H26.667C27.109 25 27.5329 24.8244 27.8455 24.5118C28.1581 24.1993 28.3337 23.7754 28.3337 23.3333V6.66667C28.3337 6.22464 28.1581 5.80072 27.8455 5.48816C27.5329 5.17559 27.109 5 26.667 5ZM25.3837 23.3333H4.71699L10.5503 17.3L9.35033 16.1417L3.33366 22.3667V7.93333L13.692 18.2417C14.0043 18.5521 14.4267 18.7263 14.867 18.7263C15.3073 18.7263 15.7297 18.5521 16.042 18.2417L26.667 7.675V22.2583L20.5337 16.125L19.3587 17.3L25.3837 23.3333ZM4.42533 6.66667H25.317L14.867 17.0583L4.42533 6.66667Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_163_6">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="ps-3">
+                            <h2 class="ff_Biryani fs_md fw_bold text_secondary mb-0">E-mail:
+                                <span class="d-block pt-1">info@demolink.org</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 border_top_warning">
+            <div class="container">
+                <img data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"
+                    src="./assets/images/svg/Page_logo.svg" alt="Page_logo">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <p class="ff_Nunito fs_md fw_regular text_secondary opacity_low mb-0 pt-4" data-aos="fade-right"
+                            data-aos-duration="800" data-aos-delay="200">Consectetur
+                            adipiscing
+                            elit, sed
+                            do
+                            eiusmod tempor incididunt ut labore et dolore.Duis
+                            aute irure dolor in reprehenderit
+                            in voluptate velit.</p>
+                        <div class="d-flex pt-4">
+                            <div class="d-flex align-items-center">
+                                <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                                    <a class="icon_footer d-flex align-items-center justify-content-center rounded-circle"
+                                        href="#">
+                                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_109_13)">
+                                                <path
+                                                    d="M8.60652 0.115385V2.65385H7.09691C6.54562 2.65385 6.17383 2.76923 5.98152 3C5.78921 3.23077 5.69306 3.57692 5.69306 4.03846V5.85577H8.51037L8.13537 8.70192H5.69306V16H2.75075V8.70192H0.298828V5.85577H2.75075V3.75962C2.75075 2.56731 3.08408 1.64263 3.75075 0.985577C4.41742 0.328526 5.30524 0 6.41421 0C7.35652 0 8.08729 0.0384615 8.60652 0.115385Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_109_13">
+                                                    <rect width="8.616" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                                    <a class="ms-4 icon_footer d-flex align-items-center justify-content-center rounded-circle"
+                                        href="#">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.6894 1.88235C18.9647 2.21176 18.1835 2.42824 17.3741 2.53176C18.2024 2.03294 18.8424 1.24235 19.1435 0.291765C18.3624 0.762353 17.4965 1.09176 16.5835 1.28C15.84 0.470588 14.7953 0 13.6094 0C11.3976 0 9.59059 1.80706 9.59059 4.03765C9.59059 4.35765 9.62823 4.66824 9.69412 4.96C6.34353 4.79059 3.36 3.18118 1.37412 0.743529C1.02588 1.33647 0.828235 2.03294 0.828235 2.76706C0.828235 4.16941 1.53412 5.41176 2.62588 6.11765C1.95765 6.11765 1.33647 5.92941 0.790588 5.64706V5.67529C0.790588 7.63294 2.18353 9.27059 4.02824 9.63765C3.43598 9.79973 2.81421 9.82228 2.21176 9.70353C2.46739 10.5059 2.96803 11.2079 3.64331 11.711C4.31858 12.2141 5.13454 12.4929 5.97647 12.5082C4.5493 13.6381 2.78023 14.2488 0.96 14.24C0.64 14.24 0.32 14.2212 0 14.1835C1.78824 15.3318 3.91529 16 6.19294 16C13.6094 16 17.6847 9.84471 17.6847 4.50824C17.6847 4.32941 17.6847 4.16 17.6753 3.98118C18.4659 3.41647 19.1435 2.70118 19.6894 1.88235Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                                    <a class="ms-4 icon_footer d-flex align-items-center justify-content-center rounded-circle"
+                                        href="#">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_111_21)">
+                                                <path
+                                                    d="M13 0C13.8264 0 14.533 0.293403 15.1198 0.880208C15.7066 1.46701 16 2.17361 16 3V13C16 13.8264 15.7066 14.533 15.1198 15.1198C14.533 15.7066 13.8264 16 13 16H3C2.17361 16 1.46701 15.7066 0.880208 15.1198C0.293403 14.533 0 13.8264 0 13V3C0 2.17361 0.293403 1.46701 0.880208 0.880208C1.46701 0.293403 2.17361 0 3 0H13ZM7.27083 8C7.27083 7.38889 7.05556 6.86806 6.625 6.4375C6.19444 6.00694 5.67361 5.79167 5.0625 5.79167C4.45139 5.79167 3.93056 6.00694 3.5 6.4375C3.06944 6.86806 2.85417 7.38889 2.85417 8C2.85417 8.61111 3.06944 9.13194 3.5 9.5625C3.93056 9.99306 4.45139 10.2083 5.0625 10.2083C5.67361 10.2083 6.19444 9.99306 6.625 9.5625C7.05556 9.13194 7.27083 8.61111 7.27083 8ZM13.1458 8C13.1458 7.38889 12.9306 6.86806 12.5 6.4375C12.0694 6.00694 11.5486 5.79167 10.9375 5.79167C10.3264 5.79167 9.80556 6.00694 9.375 6.4375C8.94444 6.86806 8.72917 7.38889 8.72917 8C8.72917 8.61111 8.94444 9.13194 9.375 9.5625C9.80556 9.99306 10.3264 10.2083 10.9375 10.2083C11.5486 10.2083 12.0694 9.99306 12.5 9.5625C12.9306 9.13194 13.1458 8.61111 13.1458 8Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_111_21">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                                    <a class="ms-4 icon_footer d-flex align-items-center justify-content-center rounded-circle"
+                                        href="#">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.1429 6.85714H22.8571V4.57143H20.5714V6.85714H18.2857V9.14286H20.5714V11.4286H22.8571V9.14286H25.1429M8 6.85714V9.6H12.5714C12.3429 10.7429 11.2 13.0286 8 13.0286C5.25714 13.0286 3.08571 10.7429 3.08571 8C3.08571 5.25714 5.25714 2.97143 8 2.97143C9.6 2.97143 10.6286 3.65714 11.2 4.22857L13.3714 2.17143C12 0.8 10.1714 0 8 0C3.54286 0 0 3.54286 0 8C0 12.4571 3.54286 16 8 16C12.5714 16 15.6571 12.8 15.6571 8.22857C15.6571 7.65714 15.6571 7.31429 15.5429 6.85714H8Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 pt-4 pt-lg-0">
+                        <div class="row">
+                            <div class="col-6 col-md-4 pt-4">
+                                <ul class="ps-0 ps-lg-4" data-aos="zoom-in" data-aos-duration="800"
+                                    data-aos-delay="200">
+                                    <li class="ff_Nunito fs_lg fw_bold text_secondary text-uppercase">QUICK LINKS
+                                    </li>
+                                    <span class="footer_line d-inline-block"></span>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">About Us</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Our Services</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Get In Touch</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Our Clients</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Download Broucher</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 pt-4" data-aos="zoom-in" data-aos-duration="800"
+                                data-aos-delay="400">
+                                <ul class="ps-0 ps-lg-4">
+                                    <li class="ff_Nunito fs_lg fw_bold text_secondary text-uppercase">CATEGORIES
+                                    </li>
+                                    <span class="footer_line d-inline-block"></span>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Express</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Material</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Furniture</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Vehicle</a></li>
+                                    <li><a class="ff_Nunito fs_md fw_regular footer_link text_secondary mt-2 d-inline-block"
+                                            href="#">Commodity</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4 pt-4" data-aos="zoom-in" data-aos-duration="800"
+                                data-aos-delay="600">
+                                <ul class="ps-0 ps-lg-4">
+                                    <li class="ff_Nunito fs_lg fw_bold text_secondary text-uppercase">NEWSLETTER
+                                    </li>
+                                    <span class="footer_line d-inline-block"></span>
+                                    <p class="ff_Nunito fs_md fw_regular text_secondary pt-3 opacity_low">Accusamus
+                                        et iusto
+                                        odio praesentium quas molestias except.</p>
+                                    <form class="w-100">
+                                        <input type="text" placeholder="Your email address" required
+                                            class="w-100 py-3 px-4 mt-2 ff_Nunito fs_xsm fw_regular text_primary">
+                                        <button
+                                            class="ff_Nunito fs_sm fw_bold text_secondary bg_tertiary py-3 px-5 border-0 mt-4 text-uppercase Subscribe_hover text-nowrap w-100">Subscribe</button>
+                                </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="ff_Nunito fs_md fw_regular text_secondary py-5 mb-0 text-center mt-5 border_top_warning"
+                    data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <span class="opacity_low">Copyright ©
+                        2023</span> <a class=" footer_link opacity_full text_secondary" href="#">MoversCO.</a> <span
+                        class="opacity_low">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+    <!-- my js  -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
